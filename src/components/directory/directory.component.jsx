@@ -56,8 +56,14 @@ class Directory extends React.Component {
             //other way to write
             <div className="directory-menu">
                 {
-                    this.state.sections.map(({id,title,imageUrl,size})=>(
-                        <MenuItem key={id} title={title} imageUrl={imageUrl} size={size}/>
+
+                    // this.state.sections.map(({id,title,imageUrl,size,linkUrl})=>(
+                    //     <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} linkUrl={linkUrl}/>
+                    // ))
+//The above one is same as below, below code section is with spread operator
+//instead of otherSecttionProps any name can be used
+                    this.state.sections.map(({id,...otherSecttionProps})=>(
+                        <MenuItem key={id} {...otherSecttionProps}/>
                     ))
                 }
             </div>
