@@ -10,11 +10,14 @@ const HeaderComponent = () => (
         </Link>
         <div className="options">
             <Link className="option" to="/shop">
-                SHOP
-        </Link>
+                    SHOP
+            </Link>
             <Link className="option" to="/shop">
-                CONTACT
-        </Link>
+                    CONTACT
+            </Link>
+            <Link className="option" to="/signin">
+                    SIGN IN
+            </Link>
         </div>
     </div>
 
