@@ -2,11 +2,12 @@
   "name": "crwn-clothing",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://anshuls01.github.io/crwn-clothing/",
+  "homepage": "https://anshuls01.github.io/crwn-clothing/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "firebase": "^8.2.5",
     "node-sass": "4.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -31,8 +32,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"yarn build",
-    "deploy":"gh-pages -d build"
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
