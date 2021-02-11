@@ -5,7 +5,7 @@ import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
 import HeaderCompnent from "./components/header/header.component";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
-import { auth, createUserProfileDocument } from './components/firebase/firebase.utils';
+import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 
 class App extends React.Component {
   constructor(props) {
@@ -33,7 +33,9 @@ class App extends React.Component {
               id: snapShot.id,
               ...snapShot.data()
             }
-          }, () => { console.log(this.state) })
+          }, () => { console.log(this.state) });
+
+          console.log(this.state);
         });
 
       }
