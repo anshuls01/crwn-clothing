@@ -20,12 +20,12 @@ const config = {
       return;
     }
 
-    console.log(userAuth.uid);
+    // console.log(userAuth.uid);
     //console.log(firestore.doc('users/123456789'));
     const userRef = firestore.doc(`users/${userAuth.uid}`);
     const snapShot = await userRef.get();
 
-    console.log(snapShot);
+    // console.log(snapShot);
     if(!snapShot.exists)
     {
       const {displayName, email} = userAuth;
